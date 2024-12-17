@@ -66,7 +66,7 @@ if (isset($_SESSION['flash'])) {
                         let res = JSON.parse(response);
                         if (res.success) {
                             alert('Продуктът беше премахнат от любими');
-                            let addBtn = $('<button class="btn btn-sm btn-primary add-favorite" data-product="' + productId + '">Добави в любими</button>');
+                            let addBtn = $('<button class="btn btn-sm add-favorite" data-product="' + productId + '">Добави в любими</button>');
                             btn.replaceWith(addBtn);
                         } else {
                             alert('Възникна грешка: ' + res.error);

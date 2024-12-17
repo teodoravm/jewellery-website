@@ -8,6 +8,8 @@ $response = [
     'error' => ''
 ];
 
+session_start();
+
 $product_id = intval($_POST['product_id'] ?? 0);
 
 if ($product_id < 0) {
